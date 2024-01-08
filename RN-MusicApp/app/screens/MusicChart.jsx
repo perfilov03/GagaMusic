@@ -1,17 +1,9 @@
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { NavigationContainer } from '@react-navigation/native';
+import { View, Text, StyleSheet } from 'react-native';
 
-const AudioList = () => {
-
-    const navigation = useNavigation()
-    const handleNavigateToScreen = () => {
-        navigation.navigate('Ежедневный чарт');
-    }
+export const MusicChart = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>GagaMusic Top 50</Text>
-            <Text style={styles.description}>Самые популярные треки на платформе за последние сутки</Text>
+            <Text style={styles.title}>Топ самых популярных треков за сутки:</Text>
             <View style={styles.div}>
                 <Text style={styles.track}>1. Ariana Grande - yes, and?</Text>
                 <Text style={styles.track}>2. Ariana Grande - 7 rings</Text>
@@ -19,10 +11,6 @@ const AudioList = () => {
                 <Text style={styles.track}>4. Lady Gaga, Ariana Grande - Rain on me</Text>
                 <Text style={styles.track}>5. Miley Cyrus - Flowers</Text>
             </View>
-            
-            <TouchableOpacity  style={styles.button} onPress={() => handleNavigateToScreen()}>
-                <Text style={styles.textButton}>Смотреть чарт</Text>
-            </TouchableOpacity>
         </View>
     )
 }
@@ -36,7 +24,7 @@ const styles = StyleSheet.create({
     },
     title:{
         color: "white",
-        fontSize: 30,
+        fontSize: 20,
         fontWeight: "bold",
         marginBottom: 20,
     },
@@ -73,4 +61,4 @@ const styles = StyleSheet.create({
     },
 })
 
-export default AudioList;
+export default MusicChart;

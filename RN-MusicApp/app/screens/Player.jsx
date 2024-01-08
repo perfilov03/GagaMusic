@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const Player = () => {
     return (
         <View style={styles.container}>
-            <Text>Воспроизведение</Text>
+            <Text>В разработке</Text>
         </View>
     )
 }
