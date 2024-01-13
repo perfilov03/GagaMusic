@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 export const MusicChart = () => {
     return (
@@ -10,7 +10,15 @@ export const MusicChart = () => {
                 <Text style={styles.track}>3. Selena Gomez - People you know</Text>
                 <Text style={styles.track}>4. Lady Gaga, Ariana Grande - Rain on me</Text>
                 <Text style={styles.track}>5. Miley Cyrus - Flowers</Text>
+                <Text style={styles.track}>6. Taylor Swift - Style (Taylor's Version)</Text>
+                <Text style={styles.track}>7. The Weeknd - One Of The Girls</Text>
+                <Text style={styles.track}>8. Taylor Swift - Cruel Summer</Text>
+                <Text style={styles.track}>9. Ariana Grande - thank u, next</Text>
+                <Text style={styles.track}>10. Miley Cyrus - Used To Be Young</Text>
             </View>
+            <TouchableOpacity  style={styles.button}>
+                <Text style={styles.textButton}>Слушать</Text>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -45,6 +53,7 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
         backgroundColor: "green",
         borderRadius: 15,
+        marginTop: 15,
     },
     track:{
         color: "white",
@@ -54,6 +63,8 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
         borderWidth: 1,
         borderColor: "black",
+        marginBottom: 5,
+        backgroundColor: "green",
     },
     textButton:{
         color: "white",

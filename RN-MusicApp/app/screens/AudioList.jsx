@@ -21,7 +21,7 @@ const AudioList = () => {
             </View>
             
             <TouchableOpacity  style={styles.button} onPress={() => handleNavigateToScreen()}>
-                <Text style={styles.textButton}>Смотреть чарт</Text>
+                <Text style={styles.textButton}>Смотреть полностью</Text>
             </TouchableOpacity>
         </View>
     )
@@ -66,6 +66,8 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
         borderWidth: 1,
         borderColor: "black",
+        marginBottom: 5,
+        backgroundColor: "green",
     },
     textButton:{
         color: "white",

@@ -13,6 +13,7 @@ const Artist = () => (
     <Text style={styles.artist}>Ariana Grande</Text>
 );
 
+
 const Player = () => {
     return (
         <View style={styles.container}>
