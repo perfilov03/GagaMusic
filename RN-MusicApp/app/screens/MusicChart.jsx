@@ -1,6 +1,11 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export const MusicChart = () => {
+    const navigation = useNavigation()
+    const handleNavigateToScreen = () => {
+        navigation.navigate('Воспроизведение');
+    }
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Топ самых популярных треков за сутки:</Text>
@@ -16,7 +21,7 @@ export const MusicChart = () => {
                 <Text style={styles.track}>9. Ariana Grande - thank u, next</Text>
                 <Text style={styles.track}>10. Miley Cyrus - Used To Be Young</Text>
             </View>
-            <TouchableOpacity  style={styles.button}>
+            <TouchableOpacity  style={styles.button} onPress={() => handleNavigateToScreen()}>
                 <Text style={styles.textButton}>Слушать</Text>
             </TouchableOpacity>
         </View>
